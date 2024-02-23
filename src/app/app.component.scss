@@ -1,0 +1,49 @@
+.page-header.is-sticky {
+  position: fixed;
+  //box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  //padding: 8px 0;
+  backdrop-filter: blur(10px);
+  animation: slideDown 0.35s ease-out;
+  background: white;
+  color: black;
+}
+
+.page-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+   background: transparent;
+   animation: slideUp 0.35s ease-out;
+
+  }
+
+  .alignEnd{
+
+  align-items: flex-end;   
+}
+
+  @keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+ @keyframes slideUp {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 980px) {
+ .header-padding{
+  padding-left: 2% !important;
+ }
+}

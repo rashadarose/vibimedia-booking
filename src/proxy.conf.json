@@ -1,0 +1,9 @@
+{
+  "/all/*": {
+    "target": "http://localhost:3000",
+    //"target" : "http://18.191.91.27:3000",
+    //"target" : "http://api.vibimedia.com:3000/",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

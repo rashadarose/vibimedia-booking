@@ -36,7 +36,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": [  "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -67,9 +67,14 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options":{
+            "browserTarget": "my-app:build",
+            "proxyConfig": "src/proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "buildTarget": "my-app:build:production"
+
             },
             "development": {
               "buildTarget": "my-app:build:development"

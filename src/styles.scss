@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.ra-blue{
+	background-color: #a2daf7;
+}
+
+.ra-blue2{
+	background-color: #008ad4;
+}
+
+.md-drppicker .btn {
+    background-color: #a2daf7 !important;
+}
+
+
+.md-drppicker td.active {
+	background-color: #a2daf7 !important;
+}
+
+*{
+	font-family: "Poppins",sans-serif;
+}
+
